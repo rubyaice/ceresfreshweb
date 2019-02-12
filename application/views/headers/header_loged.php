@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/animate.css">
   </head>
-    <body>
+    <body style="background-color:black;">
 
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Ceresfresh App</a>
