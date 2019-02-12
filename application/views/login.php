@@ -6,11 +6,14 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/animate.css">
   </head>
-  <body>
+  <body style="background-color: #293238">
 
     <div style="margin-top:5%;" class="container-fluid text-center animated flipInX">
 
-          <h2>Ingreso a Sesión de Cerefresh</h2>
+          <div class="">
+            <img class="img-flid" src="<?php echo base_url(); ?>img/logo_ceresfresh.png" alt="">
+          </div>
+          <h2 style="color:white;">Ingreso a Sesión</h2>
           <br>
           <form class="form-group" action="<?=site_url('login')?>" method="post">
             <input class="form-control" type="email" name="correo" placeholder="Ingrese su correo" required><br>

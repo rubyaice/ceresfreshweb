@@ -6,10 +6,15 @@ class Welcome extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+
+		if (!$this->session->userdata('correo')) {
+			redirect('login');
+			}
+
 			
 	}
 
-
+	
 	public function index()
 	{
 
