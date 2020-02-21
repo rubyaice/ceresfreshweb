@@ -16,6 +16,11 @@ class Usuario_model extends CI_Model {
   public function login($correo, $clave)
   {
 
+
+    $token = bin2hex( openssl_random_pseudo_bytes(20) );
+    $clave= hash('ripemd160', $clave);
+
+
     $this->db->where('correo', $correo);
     $this->db->where('clave', $clave);
     $result = $this->db->get('MA_LOGIN');

@@ -1,18 +1,9 @@
 <?php $planes_nutricionales; $planes_suscripcion; $actitud_fisica; $condicion_especial?>
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Suscribir - Cerefresh</title>
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/animate.css">
-  </head>
-  <body>
 
-    <div style="margin-top: 3%;" class="container-fluid animated fadeIn">
+    <div style="margin-top: 3%;" class="container animated fadeIn">
       <div class="text-center">
-          <h2>Formulario de Suscripcion de Ususario</h2>
+          <h2 style="color: white;">Formulario de Suscripción de Usuario</h2>
           <br><br>
       </div>
 
@@ -20,34 +11,34 @@
 
         <div class="row">
           <div class="col-md-6 col-xs-12 col-sm-12">
-            <h3 class="h3 text-center">Datos del Suscriptor</h3>
+            <h3 style="color: white;" class="h3 text-center">Datos del Suscriptor</h3>
             <input type="hidden" name="correo" value="<?php echo $_SESSION['correo']; ?>">
             <input type="hidden" name="num_afiliacion" value="123" required><br>
 
-            <p>Nombre</p>
+            <p style="color: white;">Nombre(s)</p>
             <input class="form-control" type="text" name="nombre" placeholder="Ingrese su Nombre" required><br>
-            <p>Apellido</p>
-            <input class="form-control" type="text" name="apellido" placeholder="Ingrese su apellido" required><br>
-            <p>Cédula</p>
+            <p style="color: white;">Apellido(s)</p>
+            <input class="form-control" type="text" name="apellido" placeholder="Ingrese su Apellido" required><br>
+            <p style="color: white;">Cédula</p>
             <input class="form-control" type="number" name="cedula" placeholder="Ingrese su cédula" required><br>
-            <p>Edad</p>
-            <input class="form-control" type="text" name="edad" placeholder="Ingrese su edad" required><br>
+            <p style="color: white;">Edad</p>
+            <input class="form-control" type="text" name="edad" placeholder="Ingrese su Edad" required><br>
           </div>
 
           <div class="col-md-6 col-xs-12 col-sm-12">
-            <h3 class="h3 text-center">Plan Nutricional</h3>
+            <h3 style="color: white;" class="h3 text-center">Plan Nutricional</h3>
             <br>
-            <p>Sexo</p>
+            <p style="color: white;">Sexo</p>
             <select class="form-control" name="sexo" required>
               <option value="Masculino">Masculino</option>
               <option value="Femenino">Femenino</option>
             </select>
             <br>
-            <p>Peso</p>
-            <input class="form-control" type="text" name="peso" placeholder="Ingrese su peso" required><br>
-            <p>Estatura</p>
-            <input class="form-control" type="text" name="estatura" placeholder="Ingrese su estatura" required><br>
-            <p>Actitud Física del Ususario</p>
+            <p style="color: white;">Peso</p>
+            <input class="form-control" type="text" name="peso" placeholder="Ingrese su Peso" required><br>
+            <p style="color: white;">Estatura</p>
+            <input class="form-control" type="text" name="estatura" placeholder="Ingrese su Estatura" required><br>
+            <p style="color: white;">Actitud Física del Usuario</p>
             <select class="form-control" name="act_fisica" required>
               <option value="">Seleccione su Actitud Física</option>
 
@@ -62,9 +53,9 @@
 
         </div>
         <br><br>
-        <h3 class="h3 text-center">Otros datos</h3>
+        <h3 style="color: white;" class="h3 text-center">Otros datos</h3>
         <br>
-        <p>Condición especial</p>
+        <p style="color: white;">Condición especial</p>
         <select class="form-control" name="condicion_esp" required>
           <option value="">Seleccione si tiene alguna condición especial</option>
 
@@ -75,10 +66,10 @@
           }?>
         </select>
         <br>
-        <p>Dirección de Envío</p>
+        <p style="color: white;">Dirección de Envío</p>
         <input class="form-control" type="text" name="direccion_envio" placeholder="Ingrese su dirección" required><br>
 
-        <label for="plan">Plan suscripcion</label>
+        <label style="color: white;" for="plan">Plan suscripción</label>
         <select class="form-control" name="plan_suscrip" required>
           <option value="">Seleccione un Plan de Suscripción</option>
 
